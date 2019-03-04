@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://html.myskeleton.tk/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+      <title>My webpage!</title>
+      <script src="./My webpage!_files/jquery.min.js"></script>
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+         var jQuerywindow = jQuery(window);
+         var jQuerypane = jQuery('#pane1');
+         
+         function checkWidth() {
+            var windowsize = jQuerywindow.width();
+            if (windowsize < 800) {
+                jQuery('.topcube').addClass('smallcuberes');
+               jQuery('.2rightcube').addClass('smallcuberes');
+               jQuery('.2leftcube').addClass('smallcuberes');
+               jQuery('.3leftcube').addClass('smallcuberes');
+               jQuery('.3rightcube').addClass('smallcuberes');
+               jQuery('.3centercube').addClass('smallcuberes');
+              
+              
+              
+            /*    jQuery('.topcube').css('bottom','0px');
+               jQuery('.topcube').css('position','fixed');
+               jQuery('.topcube').css('background','none');
+              jQuery('.topcube').css('background','gray');
+              jQuery('.topcube').css('width','100%');*/
+            }
+          else {
+            jQuery('.topcube').removeClass('smallcuberes');
+               jQuery('.2rightcube').removeClass('smallcuberes');
+               jQuery('.2leftcube').removeClass('smallcuberes');
+               jQuery('.3leftcube').removeClass('smallcuberes');
+               jQuery('.3rightcube').removeClass('smallcuberes');
+               jQuery('.3centercube').removeClass('smallcuberes');
+          }
+         }
+         // Execute on load
+         checkWidth();
+         // Bind event listener
+         jQuery(window).resize(checkWidth);
+         jQuery('.top-1').hover(
+         function () {
+         jQuery('.topcube').show();
+         jQuery('.topcube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.topcube').hide();
+         }
+         );
+         
+         jQuery('.secondleft').hover(
+         function () {
+         jQuery('.2leftcube').css('display','table');
+         jQuery('.2leftcube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.2leftcube').hide();
+         }
+         );
+         
+         jQuery('.secondright').hover(
+         function () {
+         jQuery('.2rightcube').css('display','table');
+         jQuery('.2rightcube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.2rightcube').hide();
+         }
+         );
+         
+          jQuery('.left3rd ').hover(
+         function () {
+         jQuery('.3leftcube').css('display','table');
+         jQuery('.3leftcube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.3leftcube').hide();
+         }
+         );
+         
+         jQuery('.right3rd ').hover(
+         function () {
+         jQuery('.3rightcube').css('display','table');
+         jQuery('.3rightcube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.3rightcube').hide();
+         }
+         );
+         
+         
+         jQuery('.center3 ').hover(
+         function () {
+         jQuery('.3centercube').css('display','table');
+         jQuery('.3centercube').css('z-index','1000');
+         }, 
+         function () {
+         jQuery('.3centercube').hide();
+         }
+         );
+         });
+      </script>
+      <style type="text/css">.slick-slide-inner {max-width:1240px!important; margin:0 auto;padding-left: 20px!important;
+         padding-right: 20px!important;}
+         .ast-small-footer-section div a:first-child{text-align:left;}
+         .ast-small-footer-section div a:last-child{text-align:right;}
+         #custom_html-4 h2{text-align:center;border:2px solid black;}
+         #custom_html-3 h2{text-align:center;border:2px solid black;}
+         #custom_html-3 div a {padding-left:10px; padding-right:10px;}
+         #custom_html-4 div a {padding-left:10px; padding-right:10px;}
+         #custom_html-4 , #custom_html-3 {text-align:center;}
+         .footerbottom1 {width:15%;text-align:left;float: left;}
+         .footerbottom2 {width:70%;text-align:center;float: left;}
+         .footerbottom3 {width:15%;text-align:right;float: left;}
+         @media screen and (max-width: 1220px) and (min-width: 1000px)
+         {
+         .footerbottom1 {width:12%;text-align:left;float: left;}
+         .footerbottom2 {width:68%;text-align:center;float: left;}
+         .footerbottom3 {width:20%;text-align:right;float: left;}
+         }
+         @media screen and (max-width: 1000px) 
+         {
+         .footerbottom1 {width:100%;text-align:left;float: left;}
+         .footerbottom2 {width:100%;text-align:left;float: left;}
+         .footerbottom3 {width:100%;text-align:left;float: left;}
+         }
+         .smallcuberes {width:100%!important; background:#cec8c8!important;position:fixed!important;top:unset!important;left:0px!important;
+         right:unset!important;bottom:0px!important;padding:10px!important;height:135px!important;}
+         @media screen and (max-width: 800px) 
+         {
+         .left-1.col-sm-4 {width:37.5%!important;}
+         .top-1.col-sm-4 {width:25%!important;}
+         .right-2.col-sm-4 {width:37%!important;}
+         .left-2.col-sm-4 {width:24%!important;}
+         .secondleft.col-sm-4 {width:25%!important;}
+         .secondright.col-sm-4 {width:26%!important;}
+         .right-1.col-sm-4 {width:22.5%!important;}
+         .left-3.col-sm-4 {width:11%!important;}
+         .left3rd {width:26%!important;}
+         .center3 {width:26%!important;}
+         .right3rd {width:26%!important;}
+         .right-3.col-sm-4 {width:10%!important;}
+         }
+         @media screen and (max-width: 600px) 
+         {
+         .secondmobileline {margin-top:10px!important;}
+         .top.col-sm-12 {height:10px!important;}
+         .mobilecube {background-size:contain!important;height:unset!important;background-position-x: center!important;
+         background-position-y: top!important;min-height:400px;}
+         .left-1.col-sm-4 {height:100px!important;}
+         .top-1.col-sm-4 {height:100px!important;}
+         .right-2.col-sm-4 {height:100px!important;width:34%!important}
+         .left-2.col-sm-4 {height:100px!important;}
+         .secondleft.col-sm-4 {height:100px!important;}
+         .secondright.col-sm-4 {height:100px!important;}
+         .right-1.col-sm-4 {height:100px!important;width:21%!important;}
+         .left-3.col-sm-4 {height:100px!important;}
+         .left3rd {height:100px!important;}
+         .center3 {height:100px!important;}
+         .right3rd {height:100px!important;}
+         .right-3.col-sm-4 {height:100px!important;width:8%!important;}
+         }
+         @media screen and (max-width: 400px) 
+         {
+         .secondmobileline {margin-top:-5px!important;}
+         .left-1.col-sm-4 {height:75px!important;}
+         .top-1.col-sm-4 {height:75px!important;}
+         .right-2.col-sm-4 {height:75px!important;width:34%!important}
+         .left-2.col-sm-4 {height:75px!important;}
+         .secondleft.col-sm-4 {height:75px!important;}
+         .secondright.col-sm-4 {height:75px!important;}
+         .right-1.col-sm-4 {height:75px!important;width:21%!important;}
+         .left-3.col-sm-4 {height:75px!important;}
+         .left3rd {height:75px!important;}
+         .center3 {height:75px!important;}
+         .right3rd {height:75px!important;}
+         .right-3.col-sm-4 {height:75px!important;width:8%!important;}
+         }/* Add your CSS code here.
+         For example:
+         .example {
+         color: red;
+         }
+         For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+         End of comment */ 
+         @media screen and (max-width: 1040px){
+         .my-slider-row .n2-ss-layer-row .n2-ss-layer-row-inner > div:first-child{
+         width: 76% !important;
+         margin-bottom: 65px !important;
+         }
+         .my-slider-row .n2-ss-layer-row .n2-ss-layer-row-inner > div:first-child h1,
+         .my-slider-row .n2-ss-layer-row .n2-ss-layer-row-inner > div:first-child p{
+         line-height: 1.2 !important;
+         }
+         .slider-img{
+         width: 350px !important;
+         }
+         }
+         @media screen and (max-width: 630px){
+         .my-slider-row .n2-ss-layer-row .n2-ss-layer-row-inner > div:first-child{
+         width: 85% !important;
+         }
+         .slider-img{
+         margin-top: 20px;
+         }
+         }
+         @media screen and (max-width: 440px){
+         .slider-img{
+         margin-top: 0px !important;
+         }
+         .slider-img img{
+         max-width: 30px !important;
+         }
+         .n2-ss-layer.n2-ow.my-slider-row{
+         max-width:228px !important
+         }
+         }
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <div class="mobilecube" style="background: url(&#39;http://www.sainefood.com/wp-content/uploads/2019/02/cubes2.png&#39;) center no-repeat; width: 100%; height: 700px;">
+         <div class="top col-sm-12" style="height: 81px; width: 100%;"></div>
+         <div class="left-1 col-sm-4" style="display: inline-block; height: 3px; width: 41.5%;"></div>
+         <div class="top-1 col-sm-4" style="cursor: pointer; position: relative; width: 17%; display: inline-block; height: 200px; z-index: 10000;">
+            <a href="http://www.sainefood.com/product/cookies-tout-chocolat-noisettes/">
+               <div class="topcube" style="text-align: center;  background-color: rgb(215, 215, 215); width: 370px; position: relative; top: -100px; right: -210px; z-index: 1000; display: none;">
+               		<div style="padding: 10px;">
+	                  <h3 style="margin-bottom: 5px;">Cookies tout chocolat &amp; noisettes</h3>
+	                  Une combinaison parfaite entre le caractère
+	                  du chocolat noir et la douceur de la noisette
+	                  pour un résultat tout en gourmandise               			
+               		</div>
+               </div>
+            </a>
+         </div>
+         <div class="right-2 col-sm-4" style="width: 40.5%; display: inline-block;"></div>
+         <div class="secondmobileline" style="margin-top: -63px;">
+            <div class="left-2 col-sm-4" style="display: inline-block; height: 3px; width: 34%;"></div>
+            <div class="secondleft col-sm-4" style="cursor: pointer; position: relative; width: 16%; display: inline-block; height: 200px; z-index: 1000;">
+               <a href="http://www.sainefood.com/product/cookies-avoine-raisins-pecan/">
+                  <div class="2leftcube" style="display: none; text-align: center; padding: 10px; background-color: rgb(215, 215, 215); width: 370px; position: relative; top: -75px; left: -396px; z-index: 1000;">
+                  	<div style="padding: 10px;">
+	                     <h3 style="margin-bottom: 5px;">Cookies avoine, raisin &amp; pécan</h3>
+	                     Ces cookies fonctionnels riches en
+	                     saveurs vous feront redécouvrir
+	                     l’avoine autrement
+	                 </div>
+                  </div>
+               </a>
+            </div>
+            <div class="secondright col-sm-4" style="cursor: pointer; position: relative; width: 16%; display: inline-block; height: 200px; z-index: 1000;">
+               <a href="http://www.sainefood.com/product/madeleines-aux-graines-de-chia-pavot/">
+                  <div class="2rightcube" style="display: none; text-align: center; padding: 10px; background-color: rgb(215, 215, 215); width: 370px; position: relative; top: -125px; right: -190px; z-index: 1000;">
+                  	<div style="padding: 10px;">
+                     	<h3 style="margin-bottom: 5px;">Madeleines aux graines de chia &amp; pavot</h3>
+                     Des madeleines moelleuses et riches en
+                     goût sans aucune matière grasse
+                     ajoutée
+                 </div>
+                  </div>
+               </a>
+            </div>
+            <div class="right-1 col-sm-4" style="width: 33%; display: inline-block;"></div>
+         </div>
+         <div class="secondmobileline" style="margin-top: -90px;">
+            <div class="left-3 col-sm-4" style="cursor: pointer; display: inline-block; height: 3px; width: 26%;"></div>
+            <div class="left3rd col-sm-4" style="width: 16%; display: inline-block; height: 200px; z-index: 1000;">
+               <a href="http://www.sainefood.com/product/fondant-au-chocolat/">
+                  <div class="3leftcube" style="display: none; text-align: center; padding: 10px; background-color: rgb(215, 215, 215); width: 370px; position: relative; top: -105px; left: -400px; z-index: 1000;">
+                  	<div style="padding: 10px;">
+	                     <h3 style="margin-bottom: 5px;">Fondant au chocolat</h3>
+	                     Un fondant au chocolat
+	                     gourmand riche en éléments
+	                     fonctionnels
+	                 </div>
+                  </div>
+               </a>
+            </div>
+            <div class="center3 col-sm-4" style="cursor: pointer; width: 16%; display: inline-block; height: 200px; z-index: 1000;">
+               <a href="http://www.sainefood.com/product/cookies-aux-pepites-de-chocolat-noix-du-bresil/">
+                  <div class="3centercube" style="display: none; text-align: center; padding: 10px; background-color: rgb(215, 215, 215); width: 370px; position: relative; bottom: -220px; left: -290px; z-index: 1000;">
+                  	<div style="padding: 10px;">
+	                     <h3 style="margin-bottom: 5px;">Cookies pépites de chocolat &amp; noix du Brésil</h3>
+	                     Un mariage parfait entre la force du chocolat
+	                     noir et la subtilité de la noix du Brésil
+	                 </div>
+                  </div>
+               </a>
+            </div>
+            <div class="right3rd col-sm-4" style="cursor: pointer; width: 15%; display: inline-block; height: 200px; z-index: 1000;">
+               <a href="http://www.sainefood.com/product/carrot-cake/">
+                  <div class="3rightcube" style="display: none; text-align: center; padding: 10px; background-color: rgb(215, 215, 215); width: 370px; position: relative; top: -114px; right: -180px; z-index: 1000;">
+                  	<div style="padding: 10px;">
+	                     <h3 style="margin-bottom: 5px;">Carrot cake</h3>
+	                     Expérimentez une explosion de
+	                     saveur avec ce Carrot cake
+	                     sans aucune matière grasse
+	                     ajoutée
+	                 </div>
+                  </div>
+               </a>
+            </div>
+            <div class="right-3 col-sm-4" style="width: 24%; display: inline-block;"></div>
+         </div>
+         <div class="bottom col-sm-12"></div>
+      </div>
+   
+</body></html>
